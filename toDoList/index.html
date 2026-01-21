@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="frame">
+    <h1 class="title">ToDo List</h1>
+
+    <div class="controls">
+      <label class="label" for="userSelect">Select a User:</label>
+      <select id="userSelect" class="select" aria-label="Select a User"></select>
+    </div>
+
+    <div class="listWrap">
+      <div class="headerRow">
+        <div class="colItem">ToDo Item</div>
+        <div class="colDone">Completed</div>
+      </div>
+
+      <div id="todoRows" class="rows" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

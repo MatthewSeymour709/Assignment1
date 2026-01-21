@@ -1,0 +1,95 @@
+:root{
+  --blue: #6f8fe6;
+  --border: #1e1e1e;
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin: 0;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.frame{
+  width: min(980px, calc(100% - 48px));
+  margin: 22px auto;
+  border: 2px solid var(--border);
+  border-radius: 18px;
+  padding: 26px 34px 30px;
+}
+
+.title{
+  margin: 0 0 18px;
+  font-size: 54px;
+  font-weight: 800;
+  color: var(--blue);
+  letter-spacing: 0.5px;
+}
+
+.controls{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0 22px;
+  font-size: 24px;
+}
+
+.label{
+  font-weight: 500;
+}
+
+.select{
+  font-size: 18px;
+  padding: 2px 8px;
+  min-width: 240px;
+}
+
+.listWrap{
+  margin-top: 4px;
+}
+
+.headerRow{
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  align-items: end;
+  column-gap: 18px;
+  margin-bottom: 6px;
+}
+
+.colItem{
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.colDone{
+  font-size: 24px;
+  font-weight: 800;
+  text-align: right;
+}
+
+.rows{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 2px;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  column-gap: 18px;
+  align-items: baseline;
+}
+
+.todoText{
+  font-size: 22px;
+  line-height: 1.15;
+  word-break: break-word;
+}
+
+.todoDone{
+  font-size: 22px;
+  text-align: right;
+}
